@@ -29,4 +29,19 @@ Jones has two boxes. One contains two gold coins, the other one gold and one sil
 2. Produce a similar plot for a truncated standard normal distribution where only positive values are allowed. This is equivalent to a Bayesian update of a standard normal prior with the observation (or true information) that the realized value was positive. Do this in a manner similar to the above with `repeat(...)` and `viz(...). `. (Hint: you might want to use a recursive call to a sampling function: if the sampled value is positive, keep it; otherwise sample again.) 
 3. Now do the same as in the previous exercise but use `Infer(...)` and one of `condition(...)`, `factor(...)` or `observe(...)`.
 
+#### Exercise 3: Null utterance in Scalar Implicature model
 
+The final model of scalar implicature reasoning presented in [Chapter II of problang.org](http://www.problang.org/chapters/02-pragmatics.html) includes a 'null utterance'. Answer the following questions about the 'null utterance' in this model.
+
+1. Looking at the utterance prior, is the null utterance any different from the other utterances? If so, how?
+2. Take the `speaker` function defined in the last code block and find values for its arguments such that the result is a distribution which puts all probability mass on the null utterance. (Another way of saying this: find a situation in which the speaker would use only the null utterance.)
+3. Interpret the parameter values you chose in the previous part. What kind of an epistemic situation is the speaker in?
+4. Comment on whether it is reasonable for the model to have the speaker choose the 'null utterance' for this case.
+
+#### Exercise 4: Hyperbole
+
+Look at the final version of the hyperbole model in [Chapter III of problang.org](http://www.problang.org/chapters/03-nonliteral.html).
+
+1. Change the pragmatic listener function so that it returns `prize` and `qud`. (Hint: this is  like in the final model of scalar implicature reasoning, where we also returned several values for the pragmatic listener's interpretation.)
+2. Change nothing else about the code and look at the picture that you get from the final call of `viz(listenerPosterior)`. Interpret this picture! Concretely, suppose that you show this to a friend who is not familiar with RSA, WebPPL or the model at hand. Explain to that friend the model's predictions, as shown in the graph.
+3. Comment on whether you find these predictions intuitive.
