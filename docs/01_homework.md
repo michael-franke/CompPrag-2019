@@ -42,6 +42,6 @@ The final model of scalar implicature reasoning presented in [Chapter II of prob
 
 Look at the final version of the hyperbole model in [Chapter III of problang.org](http://www.problang.org/chapters/03-nonliteral.html).
 
-1. Change the pragmatic listener function so that it returns `prize` and `qud`. (Hint: this is  like in the final model of scalar implicature reasoning, where we also returned several values for the pragmatic listener's interpretation.)
+1. Change the pragmatic listener function so that it returns `prize` and `qud`. (Hint: this is  like in the final model of scalar implicature reasoning, where we also returned several values for the pragmatic listener's interpretation.) Include, as the answer to this exercise, the whole function `pragmaticListener` with whatever changes you made to it (but no other parts of the code, since nothing else should change).
 2. Change nothing else about the code and look at the picture that you get from the final call of `viz(listenerPosterior)`. Interpret this picture! Concretely, suppose that you show this to a friend who is not familiar with RSA, WebPPL or the model at hand. Explain to that friend the model's predictions, as shown in the graph.
 3. Comment on whether you find these predictions intuitive.
