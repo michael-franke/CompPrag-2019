@@ -21,9 +21,11 @@ The speaker rule in the vanilla RSA model is defined in terms of a literal liste
 
 $$P_{LL}(s \mid u) = \frac{\delta_{s \in [\![u]\!]} P(s)}{\sum_{s'} \delta_{s' \in [\![u]\!]} P(s)}}$$
 
-$$P_S(u \mid s) \propto \exp(\alpha \log P_{LL}(s \mid u) - C(u) )$$
+$$P_S(u \mid s) \propto \exp(\alpha \log P_{LL}(s \mid u) $$
 
+Show that, if $$P(s) = P(s')$$ for all $$s,s'$$, the speaker rule can alternatively be written as:
 
+$$P_S(u \mid s) \propto \left [ \delta_{s \in [\![u]\!] } | [\![u]\!] |^{-1}  \right]^\alpha $$
 
 #### Exercise 2: Vagueness
 
