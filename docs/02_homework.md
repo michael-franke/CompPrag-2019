@@ -13,7 +13,7 @@ hide: true
 <script src="https://s3-us-west-2.amazonaws.com/cdn.webppl.org/webppl-viz-0.7.11.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/cdn.webppl.org/webppl-v0.9.7.js" defer async></script>
 
-Solutions are due on Friday, Friday 25 2019, midnight. Please send your solutions as a zipped archive. Please name the archive `lastName_HW2.zip` and send it to [Britta Grusdt](mailto:bgrusdt@gmail.com). The archive should contain exactly one plain text file or a markdown file (.txt or .md) with your answers and explanations to all questions. Please keep all your answers short and to the point. Also include your name and student number in the text file. Additionally the archive should contain WebPPL code files (.wppl), one for each exercise that requires code. Name your code files appropriately; e.g., the code file for the 34th part of exercise 27 should be `ex27_part34.wppl`. Submissions that conform to these style requirements receive a bonus point. 
+Solutions are due on Friday, April 5 2019, midnight. Please send your solutions as a zipped archive. Please name the archive `lastName_HW2.zip` and send it to [Britta Grusdt](mailto:bgrusdt@gmail.com). The archive should contain exactly one plain text file or a markdown file (.txt or .md) with your answers and explanations to all questions. Please keep all your answers short and to the point. Also include your name and student number in the text file. Additionally the archive should contain WebPPL code files (.wppl), one for each exercise that requires code. Name your code files appropriately; e.g., the code file for the 34th part of exercise 27 should be `ex27_part34.wppl`. Submissions that conform to these style requirements receive a bonus point. 
 
 #### Exercise 1: Rewriting the vanilla RSA model
 
@@ -59,7 +59,7 @@ Build on your code from the previous part, to now give the predictions for the i
 
 ##### Part C: utterance priors
 
-Make the utterance prior a function of $$\alpha$$, like described in [Appendix Chapter 3](http://www.problang.org/chapters/app-03-costs.html). (NB: there are two equivalent ways of doing this; one involves making $$\alpha$$ a parameter to the utterance prior; the other involves using a flat utterance prior and putting the costs elsewhere.) Which version of the model do you think is **conceptually* more plausible, the one with $$\alpha$$-dependent utterance priors or the one that is currently in the chapter (without $$\alpha$$ dependence) and why do you think so? Give your answer in at most two concise sentences.
+Make the utterance prior a function of $$\alpha$$, like described in [Appendix Chapter 3](http://www.problang.org/chapters/app-03-costs.html). (NB: there are two equivalent ways of doing this; one involves making $$\alpha$$ a parameter to the utterance prior; the other involves using a flat utterance prior and putting the costs elsewhere.) Which version of the model do you think is *conceptually* more plausible, the one with $$\alpha$$-dependent utterance priors or the one that is currently in the chapter (without $$\alpha$$ dependence) and why do you think so? Give your answer in at most two concise sentences.
 
 #### Exercise 3: 
 
