@@ -25,7 +25,7 @@ $$P_S(u \mid s) \propto \exp(\alpha (\log P_{LL}(s \mid u) - C(u))) $$
 
 Show that, if $$P(s) = P(s')$$ for all $$s,s'$$, the speaker rule can alternatively be written as:
 
-$$P_S(u \mid s) \propto \left [ \delta_{s \in [\![u]\!] } | [\![u]\!] |^{-1}  \right]^\alpha \ exp(-\alpha C(u)) $$
+$$P_S(u \mid s) \propto \left [ \delta_{s \in [\![u]\!] } \  \  | [\![u]\!] |^{-1}  \right]^\alpha \ exp(-\alpha C(u)) $$
 
 (You can type your solution (e.g., using LaTeX) or write by hand and attach a picture or scan.)
 
@@ -59,4 +59,8 @@ Build on your code from the previous part, to now give the predictions for the i
 
 ##### Part C: utterance priors
 
-Make the utterance prior a function of $$\alpha$$, like described in [Appendix Chapter 3](http://www.problang.org/chapters/app-03-costs.html). (NB: there are two equivalent ways of doing this; one involves making $$alpha$$ a parameter to the utterance prior; the other involves using a flat utterance prior and putting the costs elsewhere.) Which version of the model do you think is **conceptually* more plausible, the one with $$\alpha$$-dependent utterance priors or the one that is currently in the chapter (without $$\alpha$$ dependence) and why do you think so? Give your answer in at most two concise sentences.
+Make the utterance prior a function of $$\alpha$$, like described in [Appendix Chapter 3](http://www.problang.org/chapters/app-03-costs.html). (NB: there are two equivalent ways of doing this; one involves making $$\alpha$$ a parameter to the utterance prior; the other involves using a flat utterance prior and putting the costs elsewhere.) Which version of the model do you think is **conceptually* more plausible, the one with $$\alpha$$-dependent utterance priors or the one that is currently in the chapter (without $$\alpha$$ dependence) and why do you think so? Give your answer in at most two concise sentences.
+
+#### Exercise 3: 
+
+Extend the modeling in the final code box in the new (hidden!) [chapter on lexical uncertainty](http://www.problang.org/chapters/08-lexical-uncertainty_hidden.html) to cover the case where three individuals are salient: Anne, Bob and Carol. (To so this you need to add possible worlds, extend the set of utterances, and knowledge states, and update the semantic meaning function and refinements.) Which utterances are most interesting to test (i.e., which utterances would a normal RSA model (without lexical uncertainty or local enrichment choice) have problems with)? Do you find the predictions plausible (for at least some parameter values)? Answer in at most ten short sentences. 
