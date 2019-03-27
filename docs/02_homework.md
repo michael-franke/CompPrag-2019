@@ -15,11 +15,11 @@ hide: true
 
 Solutions are due on Friday, April 5 2019, midnight. Please send your solutions as a zipped archive. Please name the archive `lastName_HW2.zip` and send it to [Britta Grusdt](mailto:bgrusdt@gmail.com). The archive should contain exactly one plain text file or a markdown file (.txt or .md) with your answers and explanations to all questions. Please keep all your answers short and to the point. Also include your name and student number in the text file. Additionally the archive should contain WebPPL code files (.wppl), one for each exercise that requires code. Name your code files appropriately; e.g., the code file for the 34th part of exercise 27 should be `ex27_part34.wppl`. Submissions that conform to these style requirements receive a bonus point. 
 
-#### Exercise 1: Rewriting the vanilla RSA model
+#### Exercise 1: Rewriting the vanilla RSA modelhttps://doi.org/10.1038/s41562-018-0467-4
 
 The speaker rule in the vanilla RSA model is defined in terms of a literal listener like so:
 
-$$P_{LL}(s \mid u) = \frac{\delta_{s \in [\![u]\!]} P(s)}{\sum_{s'} \delta_{s' \in [\![u]\!]} P(s)}$$
+$$P_{LL}(s \mid u) = \frac{\delta_{s \in [\![u]\!]} P(s)}{\sum_{s'} \delta_{s' \in [\![u]\!]} P(s')}$$
 
 $$P_S(u \mid s) \propto \exp(\alpha (\log P_{LL}(s \mid u) - C(u))) $$
 
@@ -63,4 +63,4 @@ Make the utterance prior a function of $$\alpha$$, like described in [Appendix C
 
 #### Exercise 3: 
 
-Extend the modeling in the final code box in the new (hidden!) [chapter on lexical uncertainty](http://www.problang.org/chapters/08-lexical-uncertainty_hidden.html) to cover the case where three individuals are salient: Anne, Bob and Carol. (To so this you need to add possible worlds, extend the set of utterances, and knowledge states, and update the semantic meaning function and refinements.) Which utterances are most interesting to test (i.e., which utterances would a normal RSA model (without lexical uncertainty or local enrichment choice) have problems with)? Do you find the predictions plausible (for at least some parameter values)? Answer in at most ten short sentences. 
+Extend the modeling in the final code box in the new (hidden!) [chapter on lexical uncertainty](http://www.problang.org/chapters/08-lexical-uncertainty_hidden.html) to cover the case where three individuals are salient: Anne, Bob and Carol. (To so this you need to add possible worlds, extend the set of utterances, and knowledge states, and update the semantic meaning function and refinements.) The complete set of relevant utterances $$U$$ is isomorphic to the set of all belief states, in the sense that if `[A, AB, AC]` is a belief state, we will include the utterances "Anne or Anne and Bob or Anne and Carol". (This means that there are 127 utterances; you can write all of these (and their semantics) by hand; but you should also seriously consider writing more efficient code.) Which utterances are most interesting to test (i.e., which utterances would a normal RSA model (without lexical uncertainty or local enrichment choice) have problems with)? Do you find the predictions plausible (for at least some parameter values)? Answer in at most ten short sentences. 
